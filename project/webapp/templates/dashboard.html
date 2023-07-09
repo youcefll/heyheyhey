@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h1>Dashboard</h1>
+  
+  <p>Welcome to your dashboard, {{ username }}!</p>
+  
+  <h2>Membership Level: {{ membership_level }}</h2>
+  
+  <h3>Account Information</h3>
+  <ul>
+    <li><strong>Username:</strong> {{ username }}</li>
+    <li><strong>Email:</strong> {{ email }}</li>
+  </ul>
+  
+  <h3>Membership Benefits</h3>
+  <ul>
+    <li>Access to premium content</li>
+    <li>Ability to publish novels</li>
+    <li>Exclusive community features</li>
+  </ul>
+  
+  <p><a href="/logout">Logout</a></p>
+{% endblock %}

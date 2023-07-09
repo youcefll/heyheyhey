@@ -1,0 +1,100 @@
+{% extends "layout.html"%}
+  {% block content %}
+  <div class="container mt-4">
+    <!-- Trend Novels -->
+    <div class="mb-4">
+      <h2>Trend Novels</h2>
+      <!-- Trend Novels Slider -->
+      <div class="slider">
+        <!-- Show top 10 trend novels with extended options -->
+        {% for novel in trend_novels[:3] %}
+          <div>{{ novel.title }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Top Fanfic Books -->
+    <div class="mb-4">
+      <h2>Top Fanfic Books</h2>
+      <!-- Top Fanfic Books Slider -->
+      <div class="slider">
+        <!-- Show top 10 fanfic books with extended options -->
+        {% for book in fanfic_books[:3] %}
+          <div>{{ book.title }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Top Fanfic Tags -->
+    <div class="mb-4">
+      <h2>Top Fanfic Tags</h2>
+      <!-- Top Fanfic Tags Slider -->
+      <div class="slider">
+        <!-- Show top 10 fanfic tags with extended options -->
+        {% for tag in fanfic_tags[:3] %}
+          <div>{{ tag }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Novel Ranking -->
+    <div class="mb-4">
+      <h2>Novel Ranking</h2>
+      <!-- Novel Ranking Slider -->
+      <div class="slider">
+        <!-- Show top 10 ranked novels with extended options -->
+        {% for novel in ranked_novels[:3] %}
+          <div>{{ novel.title }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Potential Starlet Novels -->
+    <div class="mb-4">
+      <h2>Potential Starlet Novels</h2>
+      <!-- Potential Starlet Novels Slider -->
+      <div class="slider">
+        <!-- Show top 10 potential starlet novels with extended options -->
+        {% for novel in potential_starlets[:3] %}
+          <div>{{ novel.title }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Rising Fanfiction -->
+    <div class="mb-4">
+      <h2>Rising Fanfiction</h2>
+      <!-- Rising Fanfiction Slider -->
+      <div class="slider">
+        <!-- Show top 10 rising fanfictions with extended options -->
+        {% for fanfic in rising_fanfictions[:3] %}
+          <div>{{ fanfic.title }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Completed Novel -->
+    <div class="mb-4">
+      <h2>Completed Novel</h2>
+      <!-- Completed Novel Slider -->
+      <div class="slider">
+        <!-- Show top 10 completed novels with extended options -->
+        {% for novel in completed_novels[:3] %}
+          <div>{{ novel.title }}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- You May Also Like -->
+    <div class="mb-4">
+      <h2>You May Also Like</h2>
+      <!-- You May Also Like Slider -->
+      <div class="slider">
+        <!-- Show top 10 recommendations with extended options -->
+        {% for novel in recommendations[:3] %}
+          <div>{{ novel.title }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endblock %}
